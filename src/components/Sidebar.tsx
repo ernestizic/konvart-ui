@@ -12,27 +12,27 @@ import helpIcon from "@/assets/help-circle.svg";
 const Sidebar = () => {
 	const links = [
 		{
-			route: "/keyword-overview",
+			route: "/keyword-research/keyword-overview",
 			name: "Keyword overview",
 			icon: teamviewer,
 		},
 		{
-			route: "/keyword-ideas",
+			route: "/keyword-research/keyword-ideas",
 			name: "Keyword ideas",
 			icon: ideaIcon,
 		},
 		{
-			route: "/common-searches",
+			route: "/keyword-research/common-searches",
 			name: "Common Searches",
 			icon: searchListIcon,
 		},
 		{
-			route: "/keyword-opportunities",
+			route: "/keyword-research/keyword-opportunities",
 			name: "Keyword Opportunities",
 			icon: searchIcon,
 		},
 		{
-			route: "/competitor analysis",
+			route: "/keyword-research/competitor analysis",
 			name: "Competitor Analysis",
 			icon: analyticsIcon,
 		},

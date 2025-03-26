@@ -9,9 +9,10 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<DashboardLayout />}>
-					<Route index element={<Navigate to="/keyword-research" />} />
-					<Route path="/keyword-research" element={<Overview />} />
-					<Route path="/content" element={<ContentPage />} />
+					<Route index element={<Navigate to="/keyword-research/keyword-overview" />} />
+					<Route path="/keyword-research" element={<Navigate to="/keyword-research/keyword-overview" />} />
+					<Route path="/keyword-research/keyword-overview" element={<Overview />} />
+					<Route path="/keyword-research/keyword-ideas" element={<ContentPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
