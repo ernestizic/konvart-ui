@@ -8,8 +8,9 @@ import {
 } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "../ui/button";
+import { ISerpTableData } from "@/pages/content/SerpOverview";
 
-const SerpOverviewTable = ({ data }) => {
+const SerpOverviewTable = ({ data }: {data: ISerpTableData[]}) => {
 	const hasFullData = data.some(
 		(row) =>
 			row.da ||

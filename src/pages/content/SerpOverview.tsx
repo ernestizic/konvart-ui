@@ -7,9 +7,17 @@ import {
 } from "@/components/ui/popover";
 import { ChevronDown, Download, Image } from "lucide-react";
 
-const SerpOverview = () => {
+export interface ISerpTableData {
+	searchResult: string;
+	da?: number;
+	pa?: number;
+	backlinks?: number;
+	referringDomains?: number;
+	referringIp?: number;
+}
 
-	const tableData = [
+const SerpOverview = () => {
+	const tableData: ISerpTableData[] = [
 		{
 			searchResult: "Featured Snippet",
 			// da: 80,

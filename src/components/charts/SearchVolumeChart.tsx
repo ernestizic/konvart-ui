@@ -27,7 +27,28 @@ const data = [
 
 const ranges = ["1W", "1M", "6M", "1Y"];
 
-const CustomTooltip = ({ active, payload }) => {
+interface ITooltip {
+	chartType?: undefined | string;
+	color?: string;
+	dataKey: string;
+	fill: string;
+	formatter?: undefined | string;
+	hide: boolean;
+	name: string;
+	payload: { month: "Sep"; value: 192000 };
+	stroke: string;
+	type?: undefined | string;
+	unit?: undefined | string;
+	value: number;
+}
+
+const CustomTooltip = ({
+	active,
+	payload,
+}: {
+	active?: boolean;
+	payload?: ITooltip[];
+}) => {
 	if (active && payload && payload.length) {
 		return (
 			<div className="bg-white p-2 shadow-md rounded">
